@@ -1,4 +1,4 @@
-# ordinary differential equation physics interpreter
+# Ordinary Differential Equation Physics Interpreter
 
 Track: DeepMind Google (Gemma 4)  
 Status: Working Prototype (24-Hour Hackathon Build)
