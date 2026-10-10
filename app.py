@@ -49,7 +49,7 @@ with col1:
         st.image(image, caption="Uploaded Equation", use_container_width=True)
 
         if st.button("Analyze System"):
-            with st.spinner("Parsing equation via Gemini 1.5 Flash..."):
+            with st.spinner("Parsing equation via Gemma 4 & SymPy..."):
                 try:
                     # Phase A: Multimodal Extraction Prompt
                     extraction_prompt = """
