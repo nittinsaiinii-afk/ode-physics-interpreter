@@ -4,11 +4,10 @@ Track: DeepMind Google (Gemma 4)
 Status: Working Prototype (24-Hour Hackathon Build)
 
 # The Core Problem
-Generative AI models are exceptional at parsing unstructured visual data but notoriously hallucinate when asked to compute deterministic calculus or evaluate dynamic physical systems. 
-Traditional solvers (like MATLAB or SymPy) execute perfect math but cannot read messy, real-world handwritten equations. 
+it is a open source git repository which can be used at schools by the teachers to show their students the behavior and actual world application of differential equation. we are using gemma 4 to give a visual representation of differential equation.
 
 # Our Solution
-We engineered a **Neuro-Symbolic Pipeline** that bridges Gemma 4's multimodal reasoning with SymPy's deterministic computational engine. 
+We bridges Gemma 4's multimodal reasoning with SymPy's deterministic computational engine. 
 
 1. **Perception (Gemma 4):** The user uploads a raw image of a 2D differential equation system. Gemma 4 acts as a strict OCR agent, parsing the image into sanitized algebraic strings.
 2. **Computation (SymPy & NumPy):** A pure Python backend takes over to safely compute Jacobian matrices, classify eigenvalues, evaluate equilibrium points, and render a precise vector phase field (eliminating AI hallucination).
