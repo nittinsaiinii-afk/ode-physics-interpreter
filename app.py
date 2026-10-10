@@ -21,7 +21,22 @@ vision_model = genai.GenerativeModel('models/gemma-4-26b-a4b-it')
 st.set_page_config(page_title="ODE Physics Interpreter", layout="wide")
 st.title("Differential Equation Physics Interpreter ⚙️")
 st.markdown("Upload a photo of a 2D ODE system to see its phase portrait and physical meaning.")
-
+# ----- SIDEBAR: SYSTEM LIMITATIONS -----
+with st.sidebar:
+    st.header("⚠️ System Capabilities")
+    st.markdown("""
+    **Supported Systems:**
+    * **2D Coupled Systems:** Strictly 1st-order pairs ($dx/dt$, $dy/dt$).
+    * **Autonomous:** No explicit time variable ($t$) in equations.
+    * **Variables:** Must strictly use $x$ and $y$.
+    
+    **Not Supported (Will cause errors):**
+    * Single 2nd-order equations ($d^2y/dx^2$).
+    * Time-dependent vector fields.
+    * Complex transcendental root-finding loops.
+    """)
+    st.divider()
+    st.caption("Powered by Gemma 4 & SymPy")
 # ----- UI LAYOUT -----
 col1, col2 = st.columns([1, 1.5])
 
