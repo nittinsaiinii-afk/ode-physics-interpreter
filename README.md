@@ -1,4 +1,4 @@
-# Neuro-Symbolic Physics Interpreter 
+# ordinary differential equation physics interpreter
 
 Track: DeepMind Google (Gemma 4)  
 Status: Working Prototype (24-Hour Hackathon Build)
